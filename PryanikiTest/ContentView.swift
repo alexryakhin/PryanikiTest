@@ -12,8 +12,6 @@ struct ContentView: View {
     
     @ObservedObject var vm = ViewModel()
     
-    
-    
     var body: some View {
         NavigationView {
             VStack(spacing: 10) {
@@ -42,9 +40,6 @@ struct ContentView: View {
                 }.padding()
             }.navigationBarHidden(true)
         }
-    }
-    init() {
-        UITableView.appearance().tableFooterView = UIView()
     }
 }
 
