@@ -16,7 +16,7 @@ struct ContentView: View {
         NavigationView {
             VStack(spacing: 10) {
                 ZStack(alignment: .topLeading) {
-                    RoundedRectangle(cornerRadius: 25.0).stroke()
+                    RoundedRectangle(cornerRadius: 10).fill(Color.white).shadow(radius: 5)
                     Text(vm.dataToDisplay["hz"]?.text ?? "Loading...").padding()
                 }.padding()
                 
@@ -35,7 +35,7 @@ struct ContentView: View {
                     .padding(.top)
                 
                 ZStack(alignment: .topLeading) {
-                    RoundedRectangle(cornerRadius: 25.0).stroke()
+                    RoundedRectangle(cornerRadius: 10).fill(Color.white).shadow(radius: 5)
                     Text(vm.dataToDisplay["hz"]?.text ?? "Loading...").padding()
                 }.padding()
             }.navigationBarHidden(true)
