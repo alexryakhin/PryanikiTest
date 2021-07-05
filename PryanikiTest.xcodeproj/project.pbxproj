@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		516AE0AB269311020090FD22 /* PryanikiTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AE0AA269311020090FD22 /* PryanikiTestApp.swift */; };
+		516AE0AD269311020090FD22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AE0AC269311020090FD22 /* ContentView.swift */; };
+		516AE0AF269311040090FD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516AE0AE269311040090FD22 /* Assets.xcassets */; };
+		516AE0B2269311040090FD22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516AE0B1269311040090FD22 /* Preview Assets.xcassets */; };
+		516AE0BB2693118A0090FD22 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 516AE0BA2693118A0090FD22 /* Kingfisher */; };
+		516AE0BD269311980090FD22 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AE0BC269311980090FD22 /* APIResponse.swift */; };
+		516AE0C1269311A80090FD22 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AE0C0269311A80090FD22 /* ViewModel.swift */; };
+		516AE0C526932A310090FD22 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AE0C426932A310090FD22 /* Cell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		516AE0A7269311020090FD22 /* PryanikiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PryanikiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		516AE0AA269311020090FD22 /* PryanikiTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikiTestApp.swift; sourceTree = "<group>"; };
+		516AE0AC269311020090FD22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		516AE0AE269311040090FD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		516AE0B1269311040090FD22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		516AE0B3269311040090FD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516AE0BC269311980090FD22 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		516AE0C0269311A80090FD22 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		516AE0C426932A310090FD22 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		516AE0A4269311020090FD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516AE0BB2693118A0090FD22 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		516AE09E269311020090FD22 = {
+			isa = PBXGroup;
+			children = (
+				516AE0A9269311020090FD22 /* PryanikiTest */,
+				516AE0A8269311020090FD22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		516AE0A8269311020090FD22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				516AE0A7269311020090FD22 /* PryanikiTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		516AE0A9269311020090FD22 /* PryanikiTest */ = {
+			isa = PBXGroup;
+			children = (
+				516AE0AA269311020090FD22 /* PryanikiTestApp.swift */,
+				516AE0AC269311020090FD22 /* ContentView.swift */,
+				516AE0BC269311980090FD22 /* APIResponse.swift */,
+				516AE0C426932A310090FD22 /* Cell.swift */,
+				516AE0C0269311A80090FD22 /* ViewModel.swift */,
+				516AE0AE269311040090FD22 /* Assets.xcassets */,
+				516AE0B3269311040090FD22 /* Info.plist */,
+				516AE0B0269311040090FD22 /* Preview Content */,
+			);
+			path = PryanikiTest;
+			sourceTree = "<group>";
+		};
+		516AE0B0269311040090FD22 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				516AE0B1269311040090FD22 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		516AE0A6269311020090FD22 /* PryanikiTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 516AE0B6269311040090FD22 /* Build configuration list for PBXNativeTarget "PryanikiTest" */;
+			buildPhases = (
+				516AE0A3269311020090FD22 /* Sources */,
+				516AE0A4269311020090FD22 /* Frameworks */,
+				516AE0A5269311020090FD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PryanikiTest;
+			packageProductDependencies = (
+				516AE0BA2693118A0090FD22 /* Kingfisher */,
+			);
+			productName = PryanikiTest;
+			productReference = 516AE0A7269311020090FD22 /* PryanikiTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		516AE09F269311020090FD22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					516AE0A6269311020090FD22 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 516AE0A2269311020090FD22 /* Build configuration list for PBXProject "PryanikiTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 516AE09E269311020090FD22;
+			packageReferences = (
+				516AE0B92693118A0090FD22 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 516AE0A8269311020090FD22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				516AE0A6269311020090FD22 /* PryanikiTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		516AE0A5269311020090FD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516AE0B2269311040090FD22 /* Preview Assets.xcassets in Resources */,
+				516AE0AF269311040090FD22 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		516AE0A3269311020090FD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516AE0C1269311A80090FD22 /* ViewModel.swift in Sources */,
+				516AE0AD269311020090FD22 /* ContentView.swift in Sources */,
+				516AE0C526932A310090FD22 /* Cell.swift in Sources */,
+				516AE0BD269311980090FD22 /* APIResponse.swift in Sources */,
+				516AE0AB269311020090FD22 /* PryanikiTestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		516AE0B4269311040090FD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		516AE0B5269311040090FD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		516AE0B7269311040090FD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PryanikiTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 69S862NXBP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PryanikiTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dor.PryanikiTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		516AE0B8269311040090FD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PryanikiTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 69S862NXBP;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PryanikiTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dor.PryanikiTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		516AE0A2269311020090FD22 /* Build configuration list for PBXProject "PryanikiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				516AE0B4269311040090FD22 /* Debug */,
+				516AE0B5269311040090FD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		516AE0B6269311040090FD22 /* Build configuration list for PBXNativeTarget "PryanikiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				516AE0B7269311040090FD22 /* Debug */,
+				516AE0B8269311040090FD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		516AE0B92693118A0090FD22 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		516AE0BA2693118A0090FD22 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 516AE0B92693118A0090FD22 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 516AE09F269311020090FD22 /* Project object */;
+}
