@@ -10,36 +10,24 @@ import Kingfisher
 
 struct ContentView: View {
     
-    @ObservedObject var vm = ViewModel()
+    @StateObject var vm = ViewModel()
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 10) {
-                ZStack(alignment: .topLeading) {
-                    RoundedRectangle(cornerRadius: 10).fill(Color.white).shadow(radius: 5)
-                    Text(vm.dataToDisplay["hz"]?.text ?? "Loading...").padding()
-                }.padding()
-                
-                ForEach(vm.dataToDisplay["selector"]?.variants ?? [], id: \.id) { thing in
-                        NavigationLink(
-                            destination: Text(thing.text),
-                            label: {
-                                Cell(text: "Variant \(thing.id)").foregroundColor(.black).padding(.horizontal)
-                            })
-                }
-                .listStyle(InsetListStyle())
-                
-                KFImage(URL(string: "\(vm.dataToDisplay["picture"]?.url ?? "")"))
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.top)
-                
-                ZStack(alignment: .topLeading) {
-                    RoundedRectangle(cornerRadius: 10).fill(Color.white).shadow(radius: 5)
-                    Text(vm.dataToDisplay["hz"]?.text ?? "Loading...").padding()
-                }.padding()
-            }.navigationBarHidden(true)
-        }
+            ScrollView(.vertical) {
+                VStack() {
+                    ForEach(vm.orderToDisplay, id: \.self) { v in
+                        if v == "hz" {
+                            TextBlockView()
+                        } else if v == "selector" {
+                            ListView()
+                        } else if v == "picture" {
+                            ImageView()
+                        }
+                    }
+                }.navigationBarHidden(true)
+            }
+        }.environmentObject(vm)
     }
 }
 
@@ -48,3 +36,42 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct TextBlockView: View {
+    @EnvironmentObject var vm: ViewModel
+    
+    var body: some View {
+        ZStack(alignment: .topLeading) {
+            RoundedRectangle(cornerRadius: 10).fill(Color.white).shadow(radius: 5)
+            Text(vm.dataToDisplay["hz"]?.text ?? "Loading...").padding()
+        }.padding()
+    }
+}
+
+struct ListView: View {
+    @EnvironmentObject var vm: ViewModel
+    
+    var body: some View {
+        ForEach(vm.dataToDisplay["selector"]?.variants ?? [], id: \.id) { thing in
+            NavigationLink(
+                destination: Text(thing.text),
+                label: {
+                    Cell(text: "Variant \(thing.id)").foregroundColor(.black).padding()
+                })
+        }
+        .listStyle(InsetListStyle())
+    }
+}
+
+struct ImageView: View {
+    @EnvironmentObject var vm: ViewModel
+    
+    var body: some View {
+        KFImage(URL(string: "\(vm.dataToDisplay["picture"]?.url ?? "")"))
+            .resizable()
+            .scaledToFit()
+            .padding(.top).frame(width: 150)
+    }
+}
+
+

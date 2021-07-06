@@ -10,6 +10,7 @@ import Foundation
 class ViewModel: ObservableObject {
     
     @Published var dataToDisplay: [String:DataOfTheObject] = [:]
+    @Published var orderToDisplay: [String] = []
     
     init() {
         
@@ -20,6 +21,7 @@ class ViewModel: ObservableObject {
                 for object in response.data {
                     self.dataToDisplay[object.name] = object.data
                 }
+                self.orderToDisplay = response.view
             case .failure(let error):
                 switch error {
                 case .badURL:
