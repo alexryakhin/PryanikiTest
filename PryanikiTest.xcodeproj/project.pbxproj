@@ -14,7 +14,6 @@
 		516AE0BB2693118A0090FD22 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 516AE0BA2693118A0090FD22 /* Kingfisher */; };
 		516AE0BD269311980090FD22 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AE0BC269311980090FD22 /* APIResponse.swift */; };
 		516AE0C1269311A80090FD22 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AE0C0269311A80090FD22 /* ViewModel.swift */; };
-		516AE0C526932A310090FD22 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516AE0C426932A310090FD22 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		516AE0B3269311040090FD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		516AE0BC269311980090FD22 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		516AE0C0269311A80090FD22 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		516AE0C426932A310090FD22 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 				516AE0AA269311020090FD22 /* PryanikiTestApp.swift */,
 				516AE0AC269311020090FD22 /* ContentView.swift */,
 				516AE0BC269311980090FD22 /* APIResponse.swift */,
-				516AE0C426932A310090FD22 /* Cell.swift */,
 				516AE0C0269311A80090FD22 /* ViewModel.swift */,
 				516AE0AE269311040090FD22 /* Assets.xcassets */,
 				516AE0B3269311040090FD22 /* Info.plist */,
@@ -157,7 +154,6 @@
 			files = (
 				516AE0C1269311A80090FD22 /* ViewModel.swift in Sources */,
 				516AE0AD269311020090FD22 /* ContentView.swift in Sources */,
-				516AE0C526932A310090FD22 /* Cell.swift in Sources */,
 				516AE0BD269311980090FD22 /* APIResponse.swift in Sources */,
 				516AE0AB269311020090FD22 /* PryanikiTestApp.swift in Sources */,
 			);

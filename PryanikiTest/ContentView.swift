@@ -12,21 +12,20 @@ struct ContentView: View {
     
     @StateObject var vm = ViewModel()
     
+    
     var body: some View {
         NavigationView {
-            ScrollView(.vertical) {
-                VStack() {
-                    ForEach(vm.orderToDisplay, id: \.self) { v in
-                        if v == "hz" {
-                            TextBlockView()
-                        } else if v == "selector" {
-                            ListView()
-                        } else if v == "picture" {
-                            ImageView()
-                        }
+            VStack() {
+                ForEach(vm.orderToDisplay, id: \.self) { v in
+                    if v == "hz" {
+                        TextBlockView()
+                    } else if v == "selector" {
+                        ListView()
+                    } else if v == "picture" {
+                        ImageView()
                     }
-                }.navigationBarHidden(true)
-            }
+                }
+            }.navigationBarHidden(true)
         }.environmentObject(vm)
     }
 }
@@ -50,14 +49,27 @@ struct TextBlockView: View {
 
 struct ListView: View {
     @EnvironmentObject var vm: ViewModel
+    @State private var showingAlert = false
+    @State private var alertMessage = ""
     
     var body: some View {
         ForEach(vm.dataToDisplay["selector"]?.variants ?? [], id: \.id) { thing in
-            NavigationLink(
-                destination: Text(thing.text),
-                label: {
-                    Cell(text: "Variant \(thing.id)").foregroundColor(.black).padding()
-                })
+            Button(action: {
+                print("\(thing.id), \(thing.text)")
+                alertMessage = "\(thing.text), id:\(thing.id)"
+                showingAlert = true
+            }, label: {
+                Text(thing.text)
+                    .padding()
+                    .foregroundColor(.black)
+                    .background(
+                        Capsule()
+                            .fill(Color.gray)
+                            .opacity(0.5)
+                    ).shadow(radius: 10)
+            }).alert(isPresented: $showingAlert, content: {
+                Alert(title: Text(alertMessage), dismissButton: .default(Text("OK")))
+            })
         }
         .listStyle(InsetListStyle())
     }
